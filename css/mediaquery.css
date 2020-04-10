@@ -1,658 +1,358 @@
 @charset "UTF-8";
+/* In process of downloading fonts, with font-face, and creating entirely new layout, based on basic Layout, found on portfolio plan.*/
+/* Also creating entirely 
 @font-face{
     font-family: 'courier';
     src: url('../css/fonts/CourierPrime-Regular.ttf') format('truetype');
 }
 @media only screen and (min-width: 992px){
-    .grid-container{
-
-        display: -ms-grid;
-        display: grid;
-        grid-gap: 40px;
-        min-width: 10%;
-        max-width: 100%;
-        grid-template-columns:20% 20% 20% 20% 20%;
-        grid-template-rows:10% 10% 70% 10%;
-        overflow: visible;
-        margin-left: 5em;
+    html{
+        background-color: #0C141F;
+        height: 80%;
+    }
+    body{
+        background-color: #faf15b;
+        font-family: 'retro';
+        margin: 0 auto;
+        color: #0C141F;
         
     }
-    
-    body{
-    background: black;
-    position: relative;
+    .grid-container{
+        display: grid;
+        grid-template-columns: 12.5% 50% 1fr 12.5%;
+        grid-template-rows: 1fr 1fr 50% 1fr;
+        grid-gap: 30px;
+        min-height: 900px;
+        max-height: 1920px;
+        
+        
     }
-    
     .box{
-        position: relative;
-        vertical-align: middle;
-        color: black;
-        background-color: gray;
-       border: 5px solid white;
-       box-shadow:0px 0px 50px white;
-       animation-name:fade-in;
-       animation-duration:5s;
-       animation-timing-function: linear;
-       animation-delay: 0s;
-       animation-iteration-count: 1;
-       
+        background-color: #d0e5ff;
+        border: solid 4px #B82700;
+        clear: both;
+        content: "";
+        display:table;
+    
     }
-    
-    @keyframes fade-in{
-    0% {opacity: 0;}
-    
-    25%{ opacity: 0.25;}
-    
-    50%{opacity: 0.5;}
-    
-    75%{opacity: 0.75;}
-    
-    100%{opacity: 1;}
+    .whitespace1{
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 45%;
+        background-color: #0C141F;
     }
-    
-    .whitespace > img{
-        height: 200px;
-        width: 400px;
+    .whitespace2{
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        padding: 45%;
+        background-color: #0C141F;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
     .header{
-        grid-column: 1/5;
-        grid-row: 1/2;
-        font-family: 'nunito';
-        height: 85px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        font-family: 'retro';
+        border: solid 4px #B82700;
+        border-radius: 15% / 105%;
     }
     .nav{
-        font-family: 'nunito';
-        text-align: center;
-        list-style-type: none;
-        grid-column: 1/5;
-        grid-row: 2/3;
-        font-size: 60px;
-        width: 100%;
-        height: 100%;
-    }
-    .nav > ul li:hover > ul,
-    ul li ul:hover{
-            top: 0;
-            left: 60%;
-            visibility: visible;
-            opacity: 1;
-            display: block;
-    }
-    .nav > ul li ul{
-            background: orange;
-            visibility: hidden;
-            opacity: 0;
-            min-width: 5rem;
-            position: absolute;
-            transition: all 1s ease;
-            margin-top: 1rem;
-            padding-left: 1rem;
-            left: 0;
-            display: none;
-    }
-    .nav >li a{
-            color: #fff;
+        position: fixed;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-family: 'retro';
+        left:269px;
+        top: 171px;
+        width: 49.5%;
     }
     .nav > a{
-            text-decoration: none;
-    }
-    .nav > ul{
-            background: darkorange;
-            list-style: none;
-            margin: 0;
-            padding-left: 0;
-            width: 100%;
-            height: 100%;
-    }
-    .nav > li{
-        color: #fff;
-        background: darkorange;
-        display: block;
-        padding: 1rem;
-        position: relative;
+        font-size: 150%;
+        display: inline-block;
+        padding: 5px 5px;
+        color: #B82700;
         text-decoration: none;
-        transition-duration: 0.5s;
-       
-        list-style-type: none;
     }
-    .nav > li a{
-        color: #fff;
-        list-style-type: none;
+    .nav > a:hover{
+        color: rgb(214, 236, 8);
     }
-    .gallery{
-        grid-column: 1/5;
-        grid-row: 3/4;
-        font-family: 'nunito';
+    .nav > a:visited{
+        color: rgb(35, 49, 245);
     }
-    .gallery h3{
+    .article{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-family: 'retro';
+        margin-top: -60px;
+        line-height: 2;
+    
+    }
+    .img-of-toy{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        display:  block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -230px;
+    }
+    .aside{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        font-family: 'retro';
         text-align: center;
-        text-decoration: underline;
+        vertical-align: center;
+        font-size: 100%;
+        margin-top:15px;
     }
-    .gallery img{
-        width: 667px;
-        align-content: space-evenly;
-    }
-    .footer{
-        grid-column: 1/4;
-        grid-row: 4/5;
-        text-align: center;
-        background-color: #cfb79a;
-        width: 667px;
-        height: 135px;
-    }
-    .footer > h4 > a:link{
-        color: #fff;
+    .aside li{
+        list-style-image: url('../images/single-lego.png');
     }
     .back-to-top{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        position: relative;
+        height: 50px;
         text-align: center;
-        grid-column: 4/5;
-        grid-row: 4/5;
-        text-align: center;
-        display: inline-block;
+        vertical-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        top:-210px;
     }
     .back-to-top > a{
-        font-size: 60px;
+        font-size: 250%;
+        text-decoration: none;
+        color: white;
     }
-    .back-to-top > a:hover{
-        color: rgba(255, 251, 251, 0.336);
-    }
-    .back-to-top > a:visited{
-        color: rgba(255, 249, 249, 0.664);
-    }
-    .back-to-top > a:link{
-        color: rgba(255, 251, 251, 0.336);
-    }
-    .titles{
-        font-family: 'courier';
-        color: #ece4d9;
+    .footer{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        font-family: 'retro';
+        background-color: rgb(97, 138, 114);
+        text-align: center;
+        vertical-align: center;
+        width: 100%;
+        height: 50%;
         position: relative;
-        float: right;
+        top:-300px;
+    }
+    .footer a{
+        color: #B82700;
+        text-decoration: none;
+    }
+    .footer a:hover{
+        color: rgb(214, 236, 8);
+    }
+    .footer a:visited{
+        color: rgb(35, 49, 245);
+    }
+    div.nav{
         text-align: center;
     }
-    .titles2{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: left;
-        text-align: center;
-    }
-    .titles3{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: right;
-        text-align: center;
-    }
-    .text{
-        font-family: 'courier';
-        color: #00734C;
-        float: right;
-        text-align: center;
-    }
-    .text2{
-        font-family: 'courier';
-        color: #00734C;
-        text-align: center;
-        position: relative;
-        float: left;
-    }
-    .text3{
-        font-family: 'courier';
-        color: #00734C;
-        text-align: center;
-        position: relative;
-        float: right;
-        clear: left;
-    }
-    .explain{
-        grid-column: 1/5;
-        grid-row: 3/4;
-        font-size: 40px;
-        font-family: 'courier';
-        color: #00734C;
-    }
-    .volunteer{
-        grid-column: 1/5;
-        grid-row: 3/4;
-        font-size: 40px;
-        font-family: 'courier';
-        color: #00734C;
-    }
-    .resume{
-        grid-column: 1/5;
-        grid-row: 3/4;
-        font-size: 40px;
-        font-family: 'courier';
-        color: #00734C;
-    }
-    .resume > a:link{
-        color: #00734C;
-    }
-    .resume > a:hover{
-        color: rgb(87, 168, 141);
-    }
-    .resume > a:visited{
-        color: rgb(29, 63, 52);
+    .whitespace1, .whitespace2, .footer, .back-to-top, aside, .img-of-toy, article, nav, header{
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
     }
 }
 
 @media only screen and (min-width: 682px) and (max-width: 768px) {
-    .grid-container{
-
-        display: -ms-grid;
-        display: grid;
-        grid-gap: 40px;
-        min-width: 10%;
-        max-width: 100%;
-        grid-template-columns:20% 20% 20% 20% 20%;
-        grid-template-rows:10% 10% 70% 10%;
-        overflow: auto;
-        margin-left: 5em;
-        
-    }
     
-    body{
-    background: black;
-    position: relative;
-    }
-    
-    .box{
-        position: relative;
-        vertical-align: middle;
-        color: black;
-        background-color: gray;
-       border: 5px solid white;
-       box-shadow:0px 0px 50px white;
-       animation-name:fade-in;
-       animation-duration:5s;
-       animation-timing-function: linear;
-       animation-delay: 0s;
-       animation-iteration-count: 1;
-       
-    }
-    
-    @keyframes fade-in{
-    0% {opacity: 0;}
-    
-    25%{ opacity: 0.25;}
-    
-    50%{opacity: 0.5;}
-    
-    75%{opacity: 0.75;}
-    
-    100%{opacity: 1;}
-    }
-    
-    .whitespace > img{
-        height: 200px;
-        width: 400px;
-    }
-    .header{
-        grid-column: 1/5;
-        grid-row: 1/2;
-        font-family: 'nunito';
-        height: 85px;
-    }
-    .nav{
-        font-family: 'nunito';
-        text-align: center;
-        list-style-type: none;
-        grid-column: 1/5;
-        grid-row: 2/3;
-        font-size: 60px;
-        display: inline;
-    }
-    .nav > ul li:hover > ul,
-    ul li ul:hover{
-            top: 0;
-            left: 60%;
-            visibility: visible;
-            opacity: 1;
-            display: block;
-    }
-    .nav > ul li ul{
-            background: orange;
-            visibility: hidden;
-            opacity: 0;
-            min-width: 5rem;
-            position: absolute;
-            transition: all 1s ease;
-            margin-top: 1rem;
-            padding-left: 1rem;
-            left: 0;
-            display: none;
-    }
-    .nav >li a{
-            color: #fff;
-    }
-    .nav > a{
-            text-decoration: none;
-    }
-    .nav > ul{
-            background: darkorange;
-            list-style: none;
-            margin: 0;
-            padding-left: 0;
-            width: 100%;
-            height: 100%;
-    }
-    .nav > li{
-        color: #fff;
-        background: darkorange;
-        display: block;
-        padding: 1rem;
-        position: relative;
-        text-decoration: none;
-        transition-duration: 0.5s;
-       
-        list-style-type: none;
-    }
-    .nav > li a{
-        color: #fff;
-        list-style-type: none;
-    }
-    .gallery{
-        grid-column: 1/5;
-        grid-row: 3/4;
-        font-family: 'nunito';
-    }
-    .gallery h3{
-        text-align: center;
-        text-decoration: underline;
-    }
-    .gallery img{
-        width: 667px;
-        align-content: space-evenly;
-    }
-    .footer{
-        grid-column: 1/4;
-        grid-row: 4/5;
-        text-align: center;
-        background-color: #cfb79a;
-        width: 667px;
-        height: 135px;
-    }
-    .footer > h4 > a:link{
-        color: #fff;
-    }
-    .back-to-top{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
-        text-align: center;
-        grid-column: 4/5;
-        grid-row: 4/5;
-        text-align: center;
-        display: inline-block;
-    }
-    .back-to-top > a{
-        font-size: 60px;
-    }
-    .back-to-top > a:hover{
-        color: rgba(255, 251, 251, 0.336);
-    }
-    .back-to-top > a:visited{
-        color: rgba(255, 249, 249, 0.664);
-    }
-    .back-to-top > a:link{
-        color: rgba(255, 251, 251, 0.336);
-    }
-    .titles{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: right;
-        text-align: center;
-    }
-    .titles2{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: left;
-        text-align: center;
-    }
-    .titles3{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: right;
-        text-align: center;
-    }
-    .text{
-        font-family: 'courier';
-        color: #00734C;
-        float: right;
-        text-align: center;
-    }
-    .text2{
-        font-family: 'courier';
-        color: #00734C;
-        text-align: center;
-        position: relative;
-        float: left;
-    }
-    .text3{
-        font-family: 'courier';
-        color: #00734C;
-        text-align: center;
-        position: relative;
-        float: right;
-        clear: left;
-    }
-    .explain{
-        font-size: 40px;
-        font-family: 'courier';
-        color: #00734C;
-    }
 
 }
 @media only screen and (min-width: 769px) and (max-width: 991px){
-    .grid-container{
 
-        display: -ms-grid;
-        display: grid;
-        grid-gap: 40px;
-        min-width: 10%;
-        max-width: 100%;
-        grid-template-columns:20% 20% 20% 20% 20%;
-        grid-template-rows:10% 10% 70% 10%;
-        overflow: auto;
-        margin-left: 5em;
-        
-    }
-    
-    body{
-    background: black;
-    position: relative;
-    }
-    
-    .box{
-        position: relative;
-        vertical-align: middle;
-        color: black;
-        background-color: gray;
-       border: 5px solid white;
-       box-shadow:0px 0px 50px white;
-       animation-name:fade-in;
-       animation-duration:5s;
-       animation-timing-function: linear;
-       animation-delay: 0s;
-       animation-iteration-count: 1;
-       
-    }
-    
-    @keyframes fade-in{
-    0% {opacity: 0;}
-    
-    25%{ opacity: 0.25;}
-    
-    50%{opacity: 0.5;}
-    
-    75%{opacity: 0.75;}
-    
-    100%{opacity: 1;}
-    }
-    
-    .whitespace > img{
-        height: 200px;
-        width: 400px;
-    }
-    .header{
-        grid-column: 1/5;
-        grid-row: 1/2;
-        font-family: 'nunito';
-        height: 85px;
-    }
-    .nav{
-        font-family: 'nunito';
-        text-align: center;
-        list-style-type: none;
-        grid-column: 1/5;
-        grid-row: 2/3;
-        font-size: 60px;
-        display: inline;
-    }
-    .nav > ul li:hover > ul,
-    ul li ul:hover{
-            top: 0;
-            left: 60%;
-            visibility: visible;
-            opacity: 1;
-            display: block;
-    }
-    .nav > ul li ul{
-            background: orange;
-            visibility: hidden;
-            opacity: 0;
-            min-width: 5rem;
-            position: absolute;
-            transition: all 1s ease;
-            margin-top: 1rem;
-            padding-left: 1rem;
-            left: 0;
-            display: none;
-    }
-    .nav >li a{
-            color: #fff;
-    }
-    .nav > a{
-            text-decoration: none;
-    }
-    .nav > ul{
-            background: darkorange;
-            list-style: none;
-            margin: 0;
-            padding-left: 0;
-            width: 100%;
-            height: 100%;
-    }
-    .nav > li{
-        color: #fff;
-        background: darkorange;
-        display: block;
-        padding: 1rem;
-        position: relative;
-        text-decoration: none;
-        transition-duration: 0.5s;
-       
-        list-style-type: none;
-    }
-    .nav > li a{
-        color: #fff;
-        list-style-type: none;
-    }
-    .gallery{
-        grid-column: 1/5;
-        grid-row: 3/4;
-        font-family: 'nunito';
-    }
-    .gallery h3{
-        text-align: center;
-        text-decoration: underline;
-    }
-    .gallery img{
-        width: 667px;
-        align-content: space-evenly;
-    }
-    .footer{
-        grid-column: 1/4;
-        grid-row: 4/5;
-        text-align: center;
-        background-color: #cfb79a;
-        width: 667px;
-        height: 135px;
-    }
-    .footer > h4 > a:link{
-        color: #fff;
-    }
-    .back-to-top{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
-        text-align: center;
-        grid-column: 4/5;
-        grid-row: 4/5;
-        text-align: center;
-        display: inline-block;
-    }
-    .back-to-top > a{
-        font-size: 60px;
-    }
-    .back-to-top > a:hover{
-        color: rgba(255, 251, 251, 0.336);
-    }
-    .back-to-top > a:visited{
-        color: rgba(255, 249, 249, 0.664);
-    }
-    .back-to-top > a:link{
-        color: rgba(255, 251, 251, 0.336);
-    }
-    .titles{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: right;
-        text-align: center;
-    }
-    .titles2{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: left;
-        text-align: center;
-    }
-    .titles3{
-        font-family: 'courier';
-        color: #ece4d9;
-        position: relative;
-        float: right;
-        text-align: center;
-    }
-    .text{
-        font-family: 'courier';
-        color: #00734C;
-        float: right;
-        text-align: center;
-    }
-    .text2{
-        font-family: 'courier';
-        color: #00734C;
-        text-align: center;
-        position: relative;
-        float: left;
-    }
-    .text3{
-        font-family: 'courier';
-        color: #00734C;
-        text-align: center;
-        position: relative;
-        float: right;
-        clear: left;
-    }
-    .explain{
-        font-size: 40px;
-        font-family: 'courier';
-        color: #00734C;
-    }
 
 }
+/*
+@charset "UTF-8";
+@font-face{
+    font-family: 'retro';
+    src: url("fonts/Sabo-Filled.otf") format("opentype");
+}
+@font-face{
+    font-family: "lego";
+    src:url("fonts/Legothick.ttf") format("truetype");
+}
+html{
+    background-color: #0C141F;
+    height: 80%;
+}
+body{
+    background-color: #faf15b;
+    font-family: 'retro';
+    margin: 0 auto;
+    color: #0C141F;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 12.5% 50% 1fr 12.5%;
+    grid-template-rows: 1fr 1fr 50% 1fr;
+    grid-gap: 30px;
+    min-height: 900px;
+    max-height: 1920px;
+    
+    
+}
+.box{
+    background-color: #d0e5ff;
+    border: solid 4px #B82700;
+    clear: both;
+    content: "";
+    display:table;
+
+}
+.whitespace1{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 45%;
+    background-color: #0C141F;
+}
+.whitespace2{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    padding: 45%;
+    background-color: #0C141F;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: 'retro';
+    border: solid 4px #B82700;
+    border-radius: 15% / 105%;
+}
+.nav{
+    position: fixed;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'retro';
+    left:269px;
+    top: 171px;
+    width: 49.5%;
+}
+.nav > a{
+    font-size: 150%;
+    display: inline-block;
+    padding: 5px 5px;
+    color: #B82700;
+    text-decoration: none;
+}
+.nav > a:hover{
+    color: rgb(214, 236, 8);
+}
+.nav > a:visited{
+    color: rgb(35, 49, 245);
+}
+.article{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'retro';
+    margin-top: -60px;
+    line-height: 2;
+
+}
+.img-of-toy{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display:  block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -230px;
+}
+.aside{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    font-family: 'retro';
+    text-align: center;
+    vertical-align: center;
+    font-size: 100%;
+    margin-top:15px;
+}
+.aside li{
+    list-style-image: url('../images/single-lego.png');
+}
+.back-to-top{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    position: relative;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    top:-210px;
+}
+.back-to-top > a{
+    font-size: 250%;
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-family: 'retro';
+    background-color: rgb(97, 138, 114);
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    top:-300px;
+}
+.footer a{
+    color: #B82700;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: rgb(214, 236, 8);
+}
+.footer a:visited{
+    color: rgb(35, 49, 245);
+}
+div.nav{
+    text-align: center;
+}
+.whitespace1, .whitespace2, .footer, .back-to-top, aside, .img-of-toy, article, nav, header{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*/
+/* This is for the whitespace I will be creating. I have commented this out based on the media query I am currently adjusting.*/
