@@ -1,358 +1,40 @@
 @charset "UTF-8";
-/* In process of downloading fonts, with font-face, and creating entirely new layout, based on basic Layout, found on portfolio plan.*/
-/* Also creating entirely 
-@font-face{
-    font-family: 'courier';
-    src: url('../css/fonts/CourierPrime-Regular.ttf') format('truetype');
-}
-@media only screen and (min-width: 992px){
-    html{
-        background-color: #0C141F;
-        height: 80%;
-    }
-    body{
-        background-color: #faf15b;
-        font-family: 'retro';
-        margin: 0 auto;
-        color: #0C141F;
-        
-    }
-    .grid-container{
-        display: grid;
-        grid-template-columns: 12.5% 50% 1fr 12.5%;
-        grid-template-rows: 1fr 1fr 50% 1fr;
-        grid-gap: 30px;
-        min-height: 900px;
-        max-height: 1920px;
-        
-        
-    }
-    .box{
-        background-color: #d0e5ff;
-        border: solid 4px #B82700;
-        clear: both;
-        content: "";
-        display:table;
-    
-    }
-    .whitespace1{
-        grid-row-start: 1;
-        grid-row-end: 5;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        padding: 45%;
-        background-color: #0C141F;
-    }
-    .whitespace2{
-        grid-row-start: 1;
-        grid-row-end: 5;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        padding: 45%;
-        background-color: #0C141F;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .header{
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        font-family: 'retro';
-        border: solid 4px #B82700;
-        border-radius: 15% / 105%;
-    }
-    .nav{
-        position: fixed;
-        grid-row-start: 1;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-family: 'retro';
-        left:269px;
-        top: 171px;
-        width: 49.5%;
-    }
-    .nav > a{
-        font-size: 150%;
-        display: inline-block;
-        padding: 5px 5px;
-        color: #B82700;
-        text-decoration: none;
-    }
-    .nav > a:hover{
-        color: rgb(214, 236, 8);
-    }
-    .nav > a:visited{
-        color: rgb(35, 49, 245);
-    }
-    .article{
-        grid-row-start: 2;
-        grid-row-end: 4;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-family: 'retro';
-        margin-top: -60px;
-        line-height: 2;
-    
-    }
-    .img-of-toy{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        display:  block;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        top: -230px;
-    }
-    .aside{
-        grid-row-start: 2;
-        grid-row-end: 4;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        font-family: 'retro';
-        text-align: center;
-        vertical-align: center;
-        font-size: 100%;
-        margin-top:15px;
-    }
-    .aside li{
-        list-style-image: url('../images/single-lego.png');
-    }
-    .back-to-top{
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        position: relative;
-        height: 50px;
-        text-align: center;
-        vertical-align: center;
-        font-family: 'Courier New', Courier, monospace;
-        top:-210px;
-    }
-    .back-to-top > a{
-        font-size: 250%;
-        text-decoration: none;
-        color: white;
-    }
-    .footer{
-        grid-row-start: 4;
-        grid-row-end: 5;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        font-family: 'retro';
-        background-color: rgb(97, 138, 114);
-        text-align: center;
-        vertical-align: center;
-        width: 100%;
-        height: 50%;
-        position: relative;
-        top:-300px;
-    }
-    .footer a{
-        color: #B82700;
-        text-decoration: none;
-    }
-    .footer a:hover{
-        color: rgb(214, 236, 8);
-    }
-    .footer a:visited{
-        color: rgb(35, 49, 245);
-    }
-    div.nav{
-        text-align: center;
-    }
-    .whitespace1, .whitespace2, .footer, .back-to-top, aside, .img-of-toy, article, nav, header{
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-}
-
-@media only screen and (min-width: 682px) and (max-width: 768px) {
-    
-
-}
-@media only screen and (min-width: 769px) and (max-width: 991px){
-
-
-}
-/*
-@charset "UTF-8";
-@font-face{
-    font-family: 'retro';
-    src: url("fonts/Sabo-Filled.otf") format("opentype");
-}
-@font-face{
-    font-family: "lego";
-    src:url("fonts/Legothick.ttf") format("truetype");
-}
-html{
-    background-color: #0C141F;
-    height: 80%;
-}
-body{
-    background-color: #faf15b;
-    font-family: 'retro';
-    margin: 0 auto;
-    color: #0C141F;
-    
-}
-.grid-container{
-    display: grid;
-    grid-template-columns: 12.5% 50% 1fr 12.5%;
-    grid-template-rows: 1fr 1fr 50% 1fr;
-    grid-gap: 30px;
-    min-height: 900px;
-    max-height: 1920px;
-    
-    
-}
-.box{
-    background-color: #d0e5ff;
-    border: solid 4px #B82700;
-    clear: both;
-    content: "";
-    display:table;
-
-}
-.whitespace1{
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    padding: 45%;
-    background-color: #0C141F;
-}
-.whitespace2{
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 4;
-    grid-column-end: 5;
-    padding: 45%;
-    background-color: #0C141F;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-.header{
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    font-family: 'retro';
-    border: solid 4px #B82700;
-    border-radius: 15% / 105%;
-}
-.nav{
-    position: fixed;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-family: 'retro';
-    left:269px;
-    top: 171px;
-    width: 49.5%;
-}
-.nav > a{
-    font-size: 150%;
-    display: inline-block;
-    padding: 5px 5px;
-    color: #B82700;
-    text-decoration: none;
-}
-.nav > a:hover{
-    color: rgb(214, 236, 8);
-}
-.nav > a:visited{
-    color: rgb(35, 49, 245);
-}
-.article{
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-family: 'retro';
-    margin-top: -60px;
-    line-height: 2;
-
-}
-.img-of-toy{
-    grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    display:  block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: -230px;
-}
-.aside{
-    grid-row-start: 2;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    font-family: 'retro';
-    text-align: center;
-    vertical-align: center;
-    font-size: 100%;
-    margin-top:15px;
-}
-.aside li{
-    list-style-image: url('../images/single-lego.png');
-}
-.back-to-top{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    position: relative;
-    height: 50px;
-    text-align: center;
-    vertical-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    top:-210px;
-}
-.back-to-top > a{
-    font-size: 250%;
-    text-decoration: none;
-    color: white;
-}
-.footer{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    font-family: 'retro';
-    background-color: rgb(97, 138, 114);
-    text-align: center;
-    vertical-align: center;
-    width: 100%;
-    height: 50%;
-    position: relative;
-    top:-300px;
-}
-.footer a{
-    color: #B82700;
-    text-decoration: none;
-}
-.footer a:hover{
-    color: rgb(214, 236, 8);
-}
-.footer a:visited{
-    color: rgb(35, 49, 245);
-}
-div.nav{
-    text-align: center;
-}
-.whitespace1, .whitespace2, .footer, .back-to-top, aside, .img-of-toy, article, nav, header{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+/* 
+FONTS:
+    font-family: 'PT Serif', serif;
+    USE FOR BASIC TEXT & HYPERLINKS
+    font-family: 'ars';
+    USE FOR HEADERS AND FOOTERS
+    font-family: 'adelle';
+    USE FOR JS TOOLS
 */
-/* This is for the whitespace I will be creating. I have commented this out based on the media query I am currently adjusting.*/
+@font-face{
+    font-family: 'ars';
+    src: url('../css/fonts/ARSMaquettePro-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'adelle';
+    src: url('../css/fonts/Adelle_Reg.otf') format('opentype');
+}
+@media only screen and (min-width: 700px) and (max-width: 2500px) {
+/*Index PAGE*/
+.wrapper1{
+    display: grid;
+    background: no-repeat;
+    grid-template-columns: repeat(23, 45px);
+    grid-template-rows: repeat(28, 50px);
+    grid-gap: 5px;
+    background-color: white;
+
+}
+}
+
+@media only screen and (min-width: 351px) and (max-width: 699px) {
+    
+
+}
+@media only screen and (max-width: 350px) {
+
+
+
+}
