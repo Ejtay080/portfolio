@@ -1,5 +1,5 @@
 <!--
-    Author: Ethan Tayloe
+    Author: Ethan Tayloe AKA Sleepy Moon
     Date: November 11, 2019
     Description: 
     Filename: index.html
@@ -9,26 +9,34 @@
 <html>
 <head> 
     <meta name="description" content="West-MEC website explaining Ethan Tayloe's coding, and why it's so important to him."/>
-    <meta name="keywords" content="HTML, CSS, northeast, westmec, fbla, coding"/>
+    <meta name="keywords" content="HTML, CSS, northeast, westmec, fbla, coding, portfolio, career"/>
     <meta name="author" content="Ethan Tayloe"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Ethan's Portfolio: INDEX</title>
+    <title>Ethan's Portfolio: ABOUT ME</title>
     <link rel="stylesheet" type="text/css" href="css/mediaquery.css"/>
     <link rel="icon" href="images/icon.png" type="image/x-icon" sizes="8x8 16x16 32x32">
 </head>
 <body>
+    <script src="js/nav.js"></script>
    <div class="container">
        <div class="nav">
-
+            <button onclick="indexPage()" class="navbutton">Index Page</button>
+            <button onclick="aboutMePage()" class="navbutton">About Me Page</button>
+            <button onclick="resumePage()" class="navbutton">Resume Page</button>
+            <button onclick="careerPage()" class="navbutton">Career Page</button>
+            <button onclick="galleryPage()" class="navbutton">Gallery Page</button>
        </div>
        <div class="head">
-
+            <h1><img src="images/logo.png" alt="This is my logo. The SM Represents Sleepy Moon, with a light blue color, which is my favorite color." class="logo">Welcome to the About-Me Page!</h1>
        </div>
-       <div class="contact">
-           
+       <div class="contact" style="text-align: center;">
+           <h3>Contact Information</h3>
+           <a href="https://www.instagram.com/sleepymoon_16/"><img src="images/instagram.png" alt="This is a link to my instagram." class="contactme"></a>
+           <a href="tel:6025553529"><img src="images/phone.png" alt="This is a link to my phone number. Not real one, obviously." class="contactme"></a>
+           <a href="mailto:etayloe242@west-mec.org" ><img src="images/mail.png" alt="This is a link to my email. Im sending to an organization that automatically detects if it matches the address." class="contactme"></a>
        </div>
        <div class="foot">
-
+            <h2 style="text-align: center;">© Website By Ethan Tayloe. All assets are free to use, copyright free.</h2>
        </div>
    </div>
 </body>

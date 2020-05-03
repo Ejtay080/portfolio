@@ -22,11 +22,19 @@ FONTS:
         grid-template-rows: 10% 20% 60% 10%;
         display: grid;
     }
+    /*ABOUT ME PAGE*/
     .head{
-        grid-row-start: 2;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: center;
+    }
+    .navbutton{
+        display: inline;
+    }
+    .logo{
+        width: 7.5%;
     }
     .nav{
         grid-row-start: 1;
@@ -34,12 +42,30 @@ FONTS:
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    
-    .foot{
-        grid-row-start: 1;
+    .contact{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .contactme{
+        width: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        
+    }
+    .aboutme{
+        grid-row-start: 3;
         grid-row-end: 4;
-        grid-column-start: 4;
-        grid-column-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .foot{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 }
 
