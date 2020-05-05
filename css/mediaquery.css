@@ -134,6 +134,44 @@ FONTS:
         position:relative;
         left: 15%;
     }
+    /*RESUME PAGE*/
+    .resume{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .resumetxt{
+        text-align: center;
+    }
+    .resumelogo{
+        position: relative;
+        left: 40%;
+    }
+    .resumeme{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        position: relative;
+        padding: 10px;
+        font-size: 200%;
+        margin: 50px;
+    }
+    .rpictures{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 10px;
+        margin: 50px;
+    }
+    .resume1{
+        width: 80%;
+    }
+    .resume2{
+        width: 80%;
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1280px) {
