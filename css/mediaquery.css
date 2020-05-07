@@ -172,6 +172,13 @@ FONTS:
     .resume2{
         width: 80%;
     }
+    /*CAREER PAGE*/
+    .career1, .career2{
+        width: 70%;
+    }
+    .careerp1, .careerp2{
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1280px) {
