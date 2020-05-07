@@ -179,6 +179,55 @@ FONTS:
     .careerp1, .careerp2{
         width: 70%;
     }
+    .cert{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 100%;
+        position: relative;
+    }
+    .certtxt{
+        z-index: 2;
+    }
+    .cert1{
+        position: relative;
+        right: 30%;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cert2{
+        position: relative;
+        left: 30%;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .career{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        position: relative;
+        padding: 10px;
+        font-size: 200%;
+        margin: 50px;
+    }
+    .cpictures{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 10px;
+        margin: 50px;
+    }
+    .careerp1, .careerp2{
+        width: 60%;
+        caption-side: top;
+        position:relative;
+        left: 15%;
+    }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1280px) {
