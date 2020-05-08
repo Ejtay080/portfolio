@@ -52,7 +52,6 @@ FONTS:
         grid-row-end: 7;
         grid-column-start: 1;
         grid-column-end: 4;
-        background-image: url("../images/aboutme3.jpg");
     }
     /*INDEX PAGE */
     .explain{
@@ -86,6 +85,7 @@ FONTS:
     }
     .contacttxt{
         z-index: 2;
+        margin-top: 0px;
     }
     .contactme{
         width: 10%;
@@ -123,13 +123,13 @@ FONTS:
         margin: 50px;
     }
     .aboutme1{
-        width: 60%;
+        width: 70%;
         caption-side: top;
         position:relative;
         left: 15%;
     }
     .aboutme2{
-        width: 60%;
+        width: 70%;
         caption-side:top;
         position:relative;
         left: 15%;
@@ -143,6 +143,7 @@ FONTS:
     }
     .resumetxt{
         text-align: center;
+        margin-top: 0px;
     }
     .resumelogo{
         position: relative;
@@ -173,36 +174,38 @@ FONTS:
         width: 80%;
     }
     /*CAREER PAGE*/
-    .career1, .career2{
-        width: 70%;
-    }
-    .careerp1, .careerp2{
-        width: 70%;
-    }
+
     .cert{
         grid-row-start: 2;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 4;
-        height: 100%;
         position: relative;
     }
     .certtxt{
         z-index: 2;
     }
+    .certheader{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
     .cert1{
         position: relative;
-        right: 30%;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
+        width:35%;
+        left: 15%;
+        text-align: center;
+        float: left;
+
     }
     .cert2{
         position: relative;
-        left: 30%;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
+        width:35%;
+        right: 15%;
+        text-align: center;
+        float: right;
+    }
+    .cert1txt,.cert2txt{
+        margin-top: 30px;
     }
     .career{
         grid-row-start: 3;
@@ -223,10 +226,10 @@ FONTS:
         margin: 50px;
     }
     .careerp1, .careerp2{
-        width: 60%;
+        width: 80%;
         caption-side: top;
         position:relative;
-        left: 15%;
+        left: 5%;
     }
 }
 
