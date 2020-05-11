@@ -239,9 +239,31 @@ FONTS:
         grid-column-end: 4;
         
     }
-    .gallery > img{
-        width: 30%;
+    .friend{
+        width: 20%;
+        position: relative;
     }
+    .lego{
+        width: 20%;
+        position: relative;
+    }
+    .barry{
+        width: 20%;
+        position: relative;
+    }
+    .maze{
+        width: 20%;
+        position: relative;
+    }
+    .az{
+        width: 20%;
+        position: relative;
+    }
+    .store{
+        width: 20%;
+        position: relative;
+    }
+
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1280px) {
