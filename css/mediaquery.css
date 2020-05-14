@@ -595,7 +595,298 @@ FONTS:
 
 }
 @media only screen and (min-width: 700px) and (max-width: 1280px) and (orientation: landscape) {
+    /*LANDSCAPE TABLET LAYOUT*/
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 10% 1fr 1fr 10%;
+        display: grid;
+    }
+    
+    .head{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        text-align: center;
+    }
+    .navbutton{
+        display: inline;
+    }
+    .logo{
+        width: 5%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    .nav{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 30px;
+    }
 
+    .foot{
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    /*INDEX PAGE */
+    .explain{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+    }
+    .explainheader{
+        font-size: 300%;
+    }
+    .explaintxt{
+        font-size: 200%;
+    }
+    .index1, .index2{
+        width: 30%;
+        height: 50%;
+        padding: 30px;
+    }
+    /*ABOUT ME PAGE*/
+    .contact{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 100%;
+        position: relative;
+        
+    }
+    .contacttxt{
+        z-index: 2;
+        margin-top: 0px;
+    }
+    .contactme{
+        width: 70%;
+        display: block;
+        text-align: center;
+    }
+    .contactme1{
+        position: relative;
+        left: 0%;
+        
+    }
+    .contactme2{
+        position: relative;
+    }
+    .contactme3{
+        position: relative;
+        left: 0%;
+        
+    }
+    .aboutme{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        position: relative;
+        font-size: 150%;
+        text-align: center;
+    }
+    .pictures{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .aboutme1{
+        width: 90%;
+        caption-side: top;
+        position:relative;
+        top: 0%;
+    }
+    .aboutme2{
+        width: 90%;
+        caption-side:top;
+        position:relative;
+        top: 10%;
+    }
+    /*RESUME PAGE*/
+    .resume{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        position: relative;
+        top: 25%;
+    }
+    .resumetxt{
+        text-align: center;
+        margin-top: 0px;
+        position: relative;
+        top: -20%;
+        
+    }
+    .resumelogo{
+        position: relative;
+        width: 200%;
+        display: block;
+        left: -50%;
+    }
+    .resumeme{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        position: relative;
+        font-size: 150%;
+    }
+    .rpictures{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .resume1{
+        width: 90%;
+    }
+    .resume2{
+        width: 90%;
+    }
+    /*CAREER PAGE*/
+
+    .cert{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        position: relative;
+        display: block;
+        text-align: center;
+        top: 5%;
+    }
+    .certtxt{
+        z-index: 2;
+    }
+    .certheader{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        top: 0px;
+        position: relative;
+        display: none;
+    }
+    .cert1{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+
+    }
+    .cert2{
+        position: relative;
+        width:80%;
+        left: 25%;
+        text-align: center;
+    }
+    .cert2 > .cert2txt{
+        position: absolute;
+        top: 455px;
+        left: -12.5px;
+    }
+
+    .career{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        position: relative;
+        font-size: 150%;
+        text-align: center;
+    }
+    .cpictures{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .careerp1, .careerp2{
+        width: 90%;
+        caption-side: top;
+        position:relative;
+        left: 0%;
+    }
+    .careerp2{
+        top: 30%;
+    }
+    /* GALLERY PAGE */
+    .gallery{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        
+    }
+    .friend{
+        width: 70%;
+        height: 15%;
+        left: 10%;
+        position: relative;
+        margin: 0px;
+    }
+    .lego{
+        width: 70%;
+        height: 15%;
+        position: relative;
+        margin: 0px;
+    }
+    .barry{
+        width: 80%;
+        height: 25%;
+        position: relative;
+        margin: 0px;
+    }
+    .maze{
+        width: 80%;
+        height: 35%;
+        position: relative;
+        margin: 0px;
+    }
+    .az{
+        width: 70%;
+        height:15%;
+        left: 10%;
+        position: relative;
+        margin: 0px;
+    }
+    .store{
+        width: 70%;
+        height: 25%;
+        position: relative;
+        margin: 0px;
+    }
+    .thai{
+        width: 70%;
+        height:25%;
+        left: 10%;
+        position: relative;
+        margin: 0px;
+    }
+    .harpegaming{
+        width: 70%;
+        height: 15%;
+        position: relative;
+        margin: 0px;
+    }
+    .hobby{
+        width: 80%;
+        height: 25%;
+        position: relative;
+        margin: 0px;
+    }
+    td{
+        width: 40%;
+    }
 
 
 }
