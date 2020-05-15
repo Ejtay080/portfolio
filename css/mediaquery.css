@@ -1,21 +1,55 @@
 @charset "UTF-8";
 /* 
 FONTS:
-    font-family: 'PT Serif', serif;
-    USE FOR BASIC TEXT & HYPERLINKS
-    font-family: 'ars';
-    USE FOR HEADERS AND FOOTERS
-    font-family: 'adelle';
-    USE FOR JS TOOLS
-*/
+    */
 @font-face{
-    font-family: 'ars';
-    src: url('../css/fonts/ARSMaquettePro-Regular.ttf') format('truetype');
+    font-family: 'merriweather';
+    src: url('../css/fonts/Merriweather-Regular.ttf') format('truetype');
 }
 @font-face{
-    font-family: 'adelle';
-    src: url('../css/fonts/Adelle_Reg.otf') format('opentype');
+    font-family: 'opensans';
+    src: url('../css/fonts/OpenSansCondensed-Light.ttf') format('truetype');
 }
+
+html{
+    background-color: black;
+    color: #00B8F1;
+
+}
+.nav{
+    background-color: black;
+    color: #00B8F1;
+}
+.button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #00B8F1;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {
+      background-color: rgb(2, 154, 200);
+    }
+  
+  .button:active {
+    background-color: rgb(2, 154, 200);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .head{
+      font-family: 'merriweather';
+  }
+  .aboutme, .resumeme, .certtxt, .career, .gallery{
+      font-family: 'opensans';
+  }
 @media only screen and (min-width: 1281px) and (max-width: 2500px) {
     /* DESKTOP LAYOUT*/
     /* This width should be 1920px */
@@ -54,6 +88,8 @@ FONTS:
         grid-row-end: 7;
         grid-column-start: 1;
         grid-column-end: 4;
+        position: relative;
+        top: 30%;
     }
     /*INDEX PAGE */
     .explain{
@@ -239,7 +275,6 @@ FONTS:
         grid-row-end: 6;
         grid-column-start: 1;
         grid-column-end: 4;
-        
     }
     .friend{
         width: 50%;
@@ -268,7 +303,7 @@ FONTS:
     }
     .az{
         width: 50%;
-        height:25%;
+        height:20%;
         left: 10%;
         position: relative;
         margin: 0px;
@@ -281,7 +316,7 @@ FONTS:
     }
     .thai{
         width: 50%;
-        height:25%;
+        height:20%;
         left: 10%;
         position: relative;
         margin: 0px;
@@ -294,9 +329,12 @@ FONTS:
     }
     .hobby{
         width: 70%;
-        height: 25%;
+        height: 15%;
         position: relative;
         margin: 0px;
+    }
+    .thai1, .hobby1, .friend1, .lego1, .barry1, .maze1, .az1, .store1, .harpegaming1{
+        text-align: center;
     }
     td{
         width: 40%;
