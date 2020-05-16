@@ -134,12 +134,12 @@ html{
     }
     .contactme1{
         position: relative;
-        right: 30%;
+        right: 20%;
         
     }
     .contactme3{
         position: relative;
-        left: 30%;
+        left: 20%;
         
     }
     .aboutme{
@@ -185,7 +185,13 @@ html{
     }
     .resumelogo{
         position: relative;
-        left: 40%;
+        left: 15%;
+    }
+    .resumeview{
+        position: relative;
+        left: 25%;
+        height: 250px;
+        width: 700px;
     }
     .resumeme{
         grid-row-start: 3;
@@ -372,7 +378,7 @@ html{
         grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
-        padding: 30px;
+        padding: 10px;
     }
 
     .foot{
@@ -380,6 +386,8 @@ html{
         grid-row-end: 7;
         grid-column-start: 1;
         grid-column-end: 4;
+        position: relative;
+        top: 15%;
     }
     /*INDEX PAGE */
     .explain{
@@ -450,7 +458,7 @@ html{
         top: 10%;
     }
     .aboutme2{
-        top: 20%;
+        top: 10%;
         width: 90%;
         caption-side:top;
         position:relative;
@@ -469,8 +477,8 @@ html{
     }
     .resumelogo{
         position: relative;
-        left: 22%;
-        width: 60%;
+        left: 0%;
+        width: 40%;
     }
     .resumeme{
         grid-row-start: 3;
@@ -479,6 +487,12 @@ html{
         grid-column-end: 3;
         position: relative;
         font-size: 160%;
+    }
+    .resumeview{
+        position: relative;
+        width: 450px;
+        height: 200px;
+        top: 0%;
     }
     .rpictures{
         grid-row-start: 3;
@@ -540,6 +554,7 @@ html{
         grid-column-start: 1;
         grid-column-end: 3;
         position: relative;
+        margin: 20px;
         font-size: 160%;
     }
     .cpictures{
@@ -688,7 +703,7 @@ html{
     }
     .index1, .index2{
         width: 30%;
-        height: 50%;
+        height: 40%;
         padding: 30px;
     }
     /*ABOUT ME PAGE*/
@@ -761,16 +776,23 @@ html{
     }
     .resumetxt{
         text-align: center;
-        margin-top: 0px;
+        margin: 0px;
         position: relative;
         top: -20%;
         
     }
     .resumelogo{
         position: relative;
-        width: 200%;
+        width: 150%;
         display: block;
-        left: -50%;
+        left: -25%;
+        top: 20%;
+        margin-top: -110px;
+    }
+    .resumeview{
+        position: relative;
+        width: 250px;
+        height: 350px;
     }
     .resumeme{
         grid-row-start: 2;
@@ -779,6 +801,7 @@ html{
         grid-column-end: 4;
         position: relative;
         font-size: 150%;
+        text-align: center;
     }
     .rpictures{
         grid-row-start: 2;
@@ -1008,6 +1031,12 @@ html{
     .resumelogo{
         position: relative;
         left: 10%;
+    }
+    .resumeview{
+        position: relative;
+        left: 7.5%;
+        width: 435px;
+
     }
     .resumeme{
         position: relative;
